@@ -12,7 +12,7 @@ services:
     volumes:
       - ./src:/app/src
     ports:
-      - 3005:3000
+      - 3005:${PORT}
     networks:
       - nestjs-boilerplate-api
 
