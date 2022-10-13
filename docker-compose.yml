@@ -1,37 +1,20 @@
 version: '3.4'
 
 services:
-  mediator:
+  api:
     build: .
     command: npm run start:dev
     restart: always
     environment:
       - FORCE_COLOR=3
+    env_file:
+      - .env
     volumes:
       - ./src:/app/src
     ports:
-      - 3000:3000
+      - 3005:3000
     networks:
       - nestjs-boilerplate-api
-    depends_on:
-      - hapi
-  db:
-    image: postgres:14.2-alpine3.15
-    environment:
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres
-      - POSTGRES_DB=postgres
-    restart: always
-    volumes:
-      - ./db-volume/postdb-data:/var/lib/postgresql/data
-    networks:
-      - nestjs-boilerplate-api
-
-volumes:
-  db-volume:
-    driver: local
-  postdb-data:
-    driver: local
 
 networks:
     nestjs-boilerplate-api:

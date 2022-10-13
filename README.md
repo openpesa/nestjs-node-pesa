@@ -1,9 +1,6 @@
-![action status](https://github.com/udsm-dhis2-lab/nestjs-boilerplate/actions/workflows/create-pr.yml/badge.svg?branch=main)
-![release status](https://github.com/udsm-dhis2-lab/nestjs-boilerplate/actions/workflows/deploy.yml/badge.svg?branch=main)
-
 ## Description
 
-NestJs boilerplate to take you from development to deployment easily.
+An example app built in NestJs utilizing the node-pesa package.
 
 ## Installation
 
