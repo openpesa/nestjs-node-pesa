@@ -10,7 +10,7 @@ describe('AppController (e2e)', () => {
   });
   test('Get App Status (GET)', () => {
     return request(app.getHttpServer())
-      .get('/')
+      .get('/api/status')
       .expect(200)
       .expect(({ body }) => {
         expect(body.status).toBe('Ok');
