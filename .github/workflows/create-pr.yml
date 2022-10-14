@@ -1,8 +1,8 @@
-name: Create Release PR
+name: RELEASE
 
 on:
   push:
-    branches: [main]
+    branches: [develop]
 
 jobs:
   build:
@@ -17,5 +17,5 @@ jobs:
         uses: BaharaJr/create-pr@0.0.1
         with:
           GITHUB_TOKEN: ${{secrets.TOKEN}}
-          DESTINATION_BRANCH: <TARGET BRANCH FOR PR>
-          KEYWORD: <KEYWORD TO TRIGGER A PR>
+          DESTINATION_BRANCH: main
+          KEYWORD: release

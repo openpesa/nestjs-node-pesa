@@ -10,7 +10,8 @@ export class AppService {
 
       const pesa = this.pesaInstance();
 
-      return await pesa.c2b(payload);
+      const transaction = await pesa.c2b(payload);
+      return transaction;
     } catch (e) {
       throw new Error(e.message);
     }

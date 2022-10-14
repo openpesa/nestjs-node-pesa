@@ -2,7 +2,7 @@ name: Build and Deploy
 
 on:
   pull_request:
-    branches: [<YOUR PREFERRED RELEASE BRANCH>]
+    branches: [main]
 
 jobs:
   TEST:
