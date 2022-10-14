@@ -1,2 +1,2 @@
-docker build -f Dockerfile.build -t <DOCKER HUB ORGANISATION/USERNAME>/<YOUR IMAGE NAME>:<YOUR IMAGE VERSION> .
-docker push <DOCKER HUB ORGANISATION/USERNAME>/<YOUR IMAGE NAME>:<YOUR IMAGE VERSION>
+docker build -f Dockerfile.build -t baharajr/node-pesa:latest .
+docker push baharajr/node-pesa:latest
